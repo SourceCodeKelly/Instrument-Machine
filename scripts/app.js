@@ -65,3 +65,13 @@ function sound(key) {
         default: console.log(key);
     }
 }
+
+function transition(key) {
+    const active = document.querySelector('.' + key);
+
+    active.classList.add('playing');
+
+    setTimeout(function() {
+        active.classList.remove('playing');
+    }, 100);
+}
