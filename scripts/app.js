@@ -18,7 +18,7 @@ document.addEventListener('keypress', function(event) {
 function sound(key) {
     switch (key) {
         case 'a':
-            const drum1 = new Audio('');
+            const drum1 = new Audio('drum\Bounce-SoundBible.com-12678623.wav');
             drum1.play();
             break;
 
@@ -66,12 +66,12 @@ function sound(key) {
     }
 }
 
-function transition(key) {
-    const active = document.querySelector('.' + key);
+function transition(currentKey) {
+    const active = document.querySelector('.' + currentKey);
 
-    active.classList.add('playing');
+    active.classList.add('transition');
 
     setTimeout(function() {
-        active.classList.remove('playing');
+        active.classList.remove('transition');
     }, 100);
 }
