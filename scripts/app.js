@@ -12,3 +12,4 @@ window.addEventListener('keydown', function(e) {
     audio.play() //start audio
     key.classList.add('playing')
 });
+
