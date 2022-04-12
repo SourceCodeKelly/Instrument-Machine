@@ -43,7 +43,7 @@ kbd {
     color: gold;
 }
 
-.play {
+.playing {
     transform: scale(1.1);
     border-color: red;
     box-shadow: 0 0 5px brown;
