@@ -1,4 +1,4 @@
-window.addEventListener('keydown', function(e) {
+window.addEventListener('keypress', function(e) {
     //audio selection
     const audio = document.querySelector(`audio[data-key = '${e.keyCode}']`);
     //key selection
@@ -22,5 +22,5 @@ const noTransition = function(e) {
 const keys = document.querySelectorAll('.key');
 console.log(keys);
 keys.forEach(function(key) {
-    key.addEventListener('transiotioned', removeTransition)
+    key.addEventListener('transitioned', removeTransition)
 })
