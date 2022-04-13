@@ -3,32 +3,32 @@ A simple sandbox to play with musical instruments from the screen of your comput
 
 ![Instrument Machine Screenshot](https://user-images.githubusercontent.com/96215255/163183137-06ca040b-d97e-4110-9206-bb226fba3bd8.jpg)
 
-#Technologies Used:
+<h2>Technologies Used</h2>
 
-HTML, CSS, vanilla Javascript.
+<p>HTML, CSS, vanilla Javascript.</p>
 
-#User Stories:
+<h2>User Stories</h2>
 
-Make buttons that match keys
+<li>Make buttons that match keys</li>
 
-Link buttons and keys to audio files
+<li>Link buttons and keys to audio files</li>
 
-Have images for the instruments with the corresponding keys next to them
+<li>Have images for the instruments with the corresponding keys next to them</li>
 
-Makae the buttons change color when pressed
+<li>Make the buttons change color when pressed</li>
 
-Make sure the audio stops when button is not pressed
+<li>Make sure the audio stops when button is not pressed</li>
 
-Make sure the audio restarts everytime the button is pressed
+<li>Make sure the audio restarts everytime the button is pressed</li>
 
 
 
-#Getting Started:
+<h2>Getting Started</h2>
 https://sourcecodekelly.github.io/Instrument-Machine/
 
-Follow the link, then choose which instrument to play. Use the key prompts on the screen to make sound.
+<p>Follow the link, then choose which instrument to play. Use the key prompts on the screen to make sound.</p>
 
 
-#Next Steps:
+<h2>Next Steps</h2>
 
-More instruments coming soon. Adding more interactivity to the design.
+<p>More instruments coming soon. Adding more interactivity to the design.</p>
