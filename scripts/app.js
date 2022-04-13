@@ -1,77 +1,77 @@
-//Listen for keys
-const buttonAmt = document.querySelectorAll('.key').length;
-//Key click
-for (let i = 0; i < buttonAmt; i++) {
-    document.querySelectorAll('.key')[i].addEventListener('click', function() {
-        const keyStyle = this.innerHTML;
-        sound(keyStyle);
-        transition(keyStyle);
-    })
+let numberOfButtons = document.querySelectorAll(".button").length;
+
+for (let j = 0; j < numberOfButtons; j++) {
+
+    document.querySelectorAll(".button")[j]
+    .addEventListener("click", function() {
+
+        let buttonStyle = this.innerHTML;
+        sound(buttonStyle);
+        animation(buttonStyle);
+    });
 }
-//Key press
-document.addEventListener('keypress', function(event) {
+
+document.addEventListener("keypress", function(event) {
     sound(event.key);
-    transition(event.key);
+    animation(event.key);
 });
 
-//Switch for keys
 function sound(key) {
     switch (key) {
-        case 'a':
-            const drum1 = new Audio('drum\Bounce-SoundBible.com-12678623.wav');
-            drum1.play();
+        case "a":
+            let sound1 = new Audio("drum\Bounce-SoundBible.com-12678623.wav");
+            sound1.play();
             break;
 
-        case 's':
-            const drum2 = new Audio('');
-            drum2.play();
+        case "s":
+            let sound2 = new Audio("drum\Bounce-SoundBible.com-12678623.wav");
+            sound2.play();
+            break;
+
+        case "d":
+            let sound3 = new Audio('');
+            sound3.play();
+            break;
+
+        case "f":
+            let sound4 = new Audio('');
+            sound4.play();
+            break;
+
+        case "g":
+            let sound5 = new Audio('');
+            sound5.play();
+            break;
+
+        case "h":
+            let sound6 = new Audio('');
+            sound6.play();
+            break;
+
+        case "j":
+            let sound7 = new Audio('');
+            sound7.play();
             break;
         
-        case 'd':
-            const drum3 = new Audio('');
-            drum3.play();
-            break;
-       
-         case 'f':
-            const drum4 = new Audio('');
-            drum4.play();
+        case "k":
+            let sound8 = new Audio('');
+            sound8.play();
             break;
         
-        case 'g':
-            const drum5 = new Audio('');
-            drum5.play();
-            break;
-        
-        case 'h':
-            const drum6 = new Audio('');
-            drum6.play();
-            break;
-        
-        case 'j':
-            const drum7 = new Audio('');
-            drum7.play();
-            break;
-        
-        case 'k':
-            const drum8 = new Audio('');
-            drum8.play();
-            break;
-        
-        case 'l':
-            const drum9 = new Audio('');
-            drum9.play();
+        case "l":
+            let sound9 = new Audio('');
+            sound9.play();
             break;
 
         default: console.log(key);
     }
 }
 
-function transition(currentKey) {
-    const active = document.querySelector('.' + currentKey);
+function animation(currentKey) {
+let activeButton = document.querySelector("." + currentKey);
+activeButton.classList.add("animate");
 
-    active.classList.add('transition');
-
-    setTimeout(function() {
-        active.classList.remove('transition');
-    }, 100);
+setTimeout(function() {
+	activeButton.classList.remove("animate");
+}, 100);
 }

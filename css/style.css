@@ -11,7 +11,11 @@ body, html {
     font-family: 'Shadows Into Light', cursive;
 }
 
-.keys {
+h1 {
+    font-size: 50px;
+}
+
+.all {
     display: flex;
     flex: 1;
     min-height: 100vh;
@@ -19,23 +23,23 @@ body, html {
     justify-content: center;
 }
 
-.key {
-    border: 2px solid black;
-    border-radius: 5px;
-    margin: 5px;
-    font-size: 10px;
-    padding: 5px 3px;
-    transition: all .07s ease;
-    width: 30px;
-    text-align: center;
-    color: whitesmoke;
-    background: rgba(0,0,0,0.5);
-    text-shadow: 0 0 2px black;
+.animate {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 10px #ffc600;
+    background-color: #DA0463;
 }
 
-.transition {
-    transform: scale(1.1);
-    border-color: red;
-    box-shadow: 0 0 5px brown;
-
+.button {
+    border: 3px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: all .07s ease;
+    width: 50px;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.4);
+    text-shadow: 0 0 10px black;
 }
