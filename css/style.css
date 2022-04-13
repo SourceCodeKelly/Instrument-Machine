@@ -2,13 +2,19 @@ header {
     text-align: center;
     margin: 0;
     padding: 5px;
-    background-color: rgb(204, 229, 58);
+    background-color: rgba(229, 225, 13, 0.5);
+    background-position: relative;
+    color: aliceblue;
 }
 
 body, html {
     margin: 0;
     padding: 0;
+    max-width: 100%;
     font-family: 'Shadows Into Light', cursive;
+    background-image: url('https://wallpapertops.com/walldb/original/1/5/7/505167.jpg');
+    background-size: cover;
+    text-align: center;
 }
 
 h1 {
@@ -23,15 +29,9 @@ h1 {
     justify-content: center;
 }
 
-.animate {
-    transform: scale(1.1);
-    border-color: #ffc600;
-    box-shadow: 0 0 10px #ffc600;
-    background-color: #DA0463;
-}
 
 .button {
-    border: 3px solid black;
+    border: 3px solid rgb(229, 225, 13);
     border-radius: 5px;
     margin: 10px;
     font-size: 20px;
@@ -42,4 +42,11 @@ h1 {
     color: white;
     background: rgba(0,0,0,0.4);
     text-shadow: 0 0 10px black;
+}
+
+.animate {
+    transform: scale(1.1);
+    border-color: #f60703;
+    box-shadow: 0 0 10px #fd0202;
+    background-color: #ec0606;
 }

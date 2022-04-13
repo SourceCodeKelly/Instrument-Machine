@@ -19,12 +19,12 @@ document.addEventListener("keypress", function(event) {
 function sound(key) {
     switch (key) {
         case "a":
-            let sound1 = new Audio("drum\Bounce-SoundBible.com-12678623.wav");
+            let sound1 = new Audio("");
             sound1.play();
             break;
 
         case "s":
-            let sound2 = new Audio("drum\Bounce-SoundBible.com-12678623.wav");
+            let sound2 = new Audio("");
             sound2.play();
             break;
 
