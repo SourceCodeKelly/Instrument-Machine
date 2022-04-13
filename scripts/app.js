@@ -1,3 +1,4 @@
+//Add event listeners to buttons
 let numberOfButtons = document.querySelectorAll(".button").length;
 
 for (let j = 0; j < numberOfButtons; j++) {
@@ -11,11 +12,13 @@ for (let j = 0; j < numberOfButtons; j++) {
     });
 }
 
+//Add keypress function
 document.addEventListener("keypress", function(event) {
     sound(event.key);
     animation(event.key);
 });
 
+//Add sound to keys
 function sound(key) {
     switch (key) {
         case "a":
@@ -67,11 +70,12 @@ function sound(key) {
     }
 }
 
+//Animate key presses
 function animation(currentKey) {
-let activeButton = document.querySelector("." + currentKey);
-activeButton.classList.add("animate");
+    let activeButton = document.querySelector("." + currentKey);
+    activeButton.classList.add("animate");
 
-setTimeout(function() {
-	activeButton.classList.remove("animate");
-}, 100);
+    setTimeout(function() {
+        activeButton.classList.remove("animate");
+    }, 100);
 }
