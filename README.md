@@ -10,10 +10,15 @@ HTML, CSS, vanilla Javascript.
 #User Stories:
 
 Make buttons that match keys
+
 Link buttons and keys to audio files
+
 Have images for the instruments with the corresponding keys next to them
+
 Makae the buttons change color when pressed
+
 Make sure the audio stops when button is not pressed
+
 Make sure the audio restarts everytime the button is pressed
 
 
